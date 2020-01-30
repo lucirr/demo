@@ -12,9 +12,12 @@ import java.util.Map;
 
 @Controller
 public class WelcomeController {
-    @RequestMapping("/")
-    public String welcome(){
-        return "index";
+    @RequestMapping("/home")
+//    public String welcome(){
+//        return "index";
+//    }
+    public String forward() {
+        return "forward:/";
     }
 
     @RequestMapping("/search")
