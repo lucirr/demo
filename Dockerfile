@@ -1,8 +1,8 @@
-FROM openjdk:8-jre-alpine
-ENV JAR_FILE demo-0.0.1-SNAPSHOT.jar
-ENV GW_HOME /usr/front
+FROM harbor.msxpert.co.kr/library/openjdk:8-jre-alpine
+ENV JAR_FILE hello-0.0.1-SNAPSHOT.jar
+ENV APP_HOME /app
 EXPOSE 8080
-COPY target/$JAR_FILE $GW_HOME/
-WORKDIR $GW_HOME
+COPY target/$JAR_FILE $APP_HOME/
+WORKDIR $APP_HOME
 ENTRYPOINT ["sh", "-c"]
-CMD ["exec java -jar $JAR_FILE"]
+CMD ["exec java -Djava.security.egd=file:/dev/./urandom -jar $JAR_FILE"]
