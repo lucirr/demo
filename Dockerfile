@@ -1,4 +1,4 @@
-FROM harbor.msxpert.co.kr/library/openjdk:8-jre-alpine
+FROM openjdk:8-jre-alpine
 ENV JAR_FILE hello-0.0.1-SNAPSHOT.jar
 ENV APP_HOME /app
 EXPOSE 8080

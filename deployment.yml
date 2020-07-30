@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: hello
-          image: "harbor.msxpert.co.kr/library/hello:latest"
+          image: default-route-openshift-image-registry.apps.dmzsd.kbstar.local/example/hello:latest
           imagePullPolicy: Always          
           ports:
             - containerPort: 8080
