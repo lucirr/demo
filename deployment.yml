@@ -4,7 +4,6 @@ metadata:
   name: hello
   labels:
     application: hello
-  namespace: example
 spec:
   replicas: 2
   selector:
