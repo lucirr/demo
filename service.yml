@@ -4,7 +4,6 @@ metadata:
   name: hello
   labels:
       application: hello
-  namespace: example
 spec:
   ports:
   - port: 8080
